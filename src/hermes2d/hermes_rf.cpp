@@ -1364,19 +1364,16 @@ void ViewScalarFilterRF::calculateVariable(int i)
         break;
     case PhysicFieldVariable_RF_PoyntingVectorY:
     {
-        SceneMaterialRF *marker = dynamic_cast<SceneMaterialRF *>(material);
-
         double mu = marker->permeability.number * MU0;
         double w = 2 * M_PI * Util::scene()->problemInfo()->frequency;
 
         if (Util::scene()->problemInfo()->problemType == ProblemType_Planar)
         {
-            node->values[0][0][i] = 0.5 * ((value2[i] * 1/(w*mu) * dudy1[i]) - (value1[i] * 1/(w*mu) * dudy2[i]));
+            node->values[0][0][i] = - 0.5 * ((value2[i] * 1/(w*mu) * dudy1[i]) - (value1[i] * 1/(w*mu) * dudy2[i]));
         }
         else
         {
-            //node->values[0][0][i] = 0.5 * ((value2[i] * 1/(w*mu) * dudx1[i]) - (value1[i] * 1/(w*mu) * dudx2[i]));
-            node->values[0][0][i] = 0.5 * ((value2[i] * 1/(w*mu) * dudy1[i]) - (value1[i] * 1/(w*mu) * dudy2[i]));
+            node->values[0][0][i] = - 0.5 * ((value2[i] * 1/(w*mu) * dudy1[i]) - (value1[i] * 1/(w*mu) * dudy2[i]));
         }
     }
         break;

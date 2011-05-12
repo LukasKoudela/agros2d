@@ -1,0 +1,54 @@
+<document>
+    <problems>
+        <problem maxdofs="60000" adaptivitytolerance="1" id="0" analysistype="harmonic" initialcondition="0.0" linearitysteps="10" adaptivitysteps="1" linearity="linear" name="RF_waveguide_R100" date="2011-04-13" polynomialorder="5" timestep="1.0" problemtype="planar" adaptivitytype="disabled" linearitytolerance="0.001" numberofrefinements="0" frequency="10000000000" matrix_solver="umfpack" type="rf" timetotal="1.0">
+            <scriptstartup></scriptstartup>
+            <description></description>
+            <edges>
+                <edge value_imag="0" type="rf_electric_field" id="1" name="Perfect electric conductor" value_real="0"/>
+                <edge type="rf_matched_boundary" id="2" name="Matched boundary"/>
+                <edge value_imag="100" type="rf_surface_current" id="3" name="Surface current" value_real="100"/>
+            </edges>
+            <labels>
+                <label current_density_real="0" conductivity="0" id="1" name="Air" current_density_imag="0" permeability="1" permittivity="1"/>
+            </labels>
+        </problem>
+    </problems>
+    <geometry>
+        <nodes>
+            <node x="0.17" y="0.01143" id="0"/>
+            <node x="0" y="-0.01143" id="1"/>
+            <node x="0" y="0.01143" id="2"/>
+            <node x="0.17" y="-0.01143" id="3"/>
+            <node x="0.17" y="0.01343" id="4"/>
+            <node x="0.17" y="-0.01343" id="5"/>
+            <node x="0" y="0.01343" id="6"/>
+            <node x="0" y="-0.01343" id="7"/>
+            <node x="0.18" y="-0.05" id="8"/>
+            <node x="0.18" y="0.05" id="9"/>
+            <node x="0.1825" y="-0.05" id="10"/>
+            <node x="0.1825" y="0.05" id="11"/>
+            <node x="0.3" y="0.3" id="12"/>
+            <node x="0.3" y="-0.3" id="13"/>
+        </nodes>
+        <edges>
+            <edge end="1" refine_towards="0" marker="3" id="0" start="2" angle="0"/>
+            <edge end="0" refine_towards="0" marker="1" id="1" start="2" angle="0"/>
+            <edge end="1" refine_towards="0" marker="1" id="2" start="3" angle="0"/>
+            <edge end="9" refine_towards="0" marker="1" id="3" start="8" angle="60"/>
+            <edge end="4" refine_towards="0" marker="2" id="4" start="0" angle="0"/>
+            <edge end="5" refine_towards="0" marker="2" id="5" start="3" angle="0"/>
+            <edge end="7" refine_towards="0" marker="2" id="6" start="5" angle="0"/>
+            <edge end="6" refine_towards="0" marker="2" id="7" start="4" angle="0"/>
+            <edge end="11" refine_towards="0" marker="1" id="8" start="9" angle="0"/>
+            <edge end="10" refine_towards="0" marker="1" id="9" start="8" angle="0"/>
+            <edge end="11" refine_towards="0" marker="1" id="10" start="10" angle="75"/>
+            <edge end="6" refine_towards="0" marker="1" id="11" start="12" angle="90"/>
+            <edge end="13" refine_towards="0" marker="1" id="12" start="7" angle="90"/>
+            <edge end="13" refine_towards="0" marker="2" id="13" start="12" angle="0"/>
+        </edges>
+        <labels>
+            <label x="0.0967604" y="0.0528798" polynomialorder="0" marker="1" id="0" area="0.0005"/>
+            <label x="0.1962576326730452" y="0.0171270406563462" polynomialorder="0" marker="0" id="1" area="0"/>
+        </labels>
+    </geometry>
+</document>

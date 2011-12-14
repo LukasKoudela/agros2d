@@ -208,7 +208,7 @@
                     unit="T" unit_html="T" unit_latex="T" />
                 <quantity id="magnetic_remanence_angle" name="Remanent flux density - angle"
                     shortname="Bra" shortname_html="&lt;i&gt;&amp;alpha;&lt;/i&gt;&lt;sub&gt;rm&lt;/sub&gt;" shortname_latex="\alpha_{rm}"
-                    unit="deg." unit="deg." unit="deg."/>
+                    unit="deg." unit_html="deg." unit_latex="deg."/>
             </group>
             <group name="Velocity">
                 <quantity id="magnetic_velocity_x" name="Velocity - x"
@@ -579,7 +579,7 @@
         <surfaceintegrals>
             <surfaceintegral id="magnetic_length" name="Length"
                              shortname="l" shortname_html="&lt;i&gt;l&lt;/i&gt;"" shortname_latex="l"
-                             unit="m" unit_html="m" unit_latex="m">
+                             unit="m" unit_html="m" unit_latex="m" >
                 <expression analysistype="steadystate" planar="1.0"
                                                        axi="1.0" />
                 <expression analysistype="harmonic" planar="1.0"
@@ -589,7 +589,7 @@
             </surfaceintegral>
             <surfaceintegral id="magentic_surface" name="Surface"
                              shortname="S" shortname_html="&lt;i&gt;S&lt;/i&gt;"" shortname_latex="S"
-                             unit="m2" unit_html="m&lt;sup&gt;2&lt;/sup&gt;" unit_latex="m^{2}">
+                             unit="m2" unit_html="m&lt;sup&gt;2&lt;/sup&gt;" unit_latex="m^{2}" >
                 <expression analysistype="steadystate" planar="1.0"
                                                        axi="2.0 * PI * r" />
                 <expression analysistype="harmonic" planar="1.0"

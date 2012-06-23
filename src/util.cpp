@@ -195,10 +195,13 @@ void initLists()
     physicFieldVariableList.insert(PhysicFieldVariable_Acoustic_Pressure, "acoustic_pressure");
     physicFieldVariableList.insert(PhysicFieldVariable_Acoustic_PressureReal, "acoustic_pressure_real");
     physicFieldVariableList.insert(PhysicFieldVariable_Acoustic_PressureImag, "acoustic_pressure_imag");
+    physicFieldVariableList.insert(PhysicFieldVariable_Acoustic_PressureLevel, "acoustic_pressure_level");
     physicFieldVariableList.insert(PhysicFieldVariable_Acoustic_LocalVelocity, "acoustic_local_velocity");
     physicFieldVariableList.insert(PhysicFieldVariable_Acoustic_LocalAcceleration, "acoustic_local_acceleration");
     physicFieldVariableList.insert(PhysicFieldVariable_Acoustic_Density, "acoustic_density");
     physicFieldVariableList.insert(PhysicFieldVariable_Acoustic_Speed, "acoustic_speed");
+    physicFieldVariableList.insert(PhysicFieldVariable_Acoustic_Energy, "acoustic_pressure_energy");
+    physicFieldVariableList.insert(PhysicFieldVariable_Acoustic_EnergyLevel, "acoustic_pressure_energy_level");
 
     // PHYSICFIELDVARIABLECOMP
     physicFieldVariableCompList.insert(PhysicFieldVariableComp_Undefined, "");
